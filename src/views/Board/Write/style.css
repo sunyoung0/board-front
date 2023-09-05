@@ -1,0 +1,127 @@
+#board-write-wrapper {
+	border-top: 1px solid rgba(0, 0, 0, 0.2);
+
+	padding: 0 153px;
+
+	background-color: rgba(0, 0, 0, 0.05);
+}
+
+.board-write-container{
+	padding: 100px 24px;
+
+	background-color: #ffffff;
+}
+
+.board-write-title-container{
+	margin-bottom: 20px;
+}
+
+.board-write-title-input {
+	width: 100%;
+	
+	border: none;
+	outline: none;
+	background: none;
+
+	display: block;
+
+	font-size: 32px;
+	font-weight: 500;
+	line-height: 100%;
+}
+
+.board-write-content-container {
+	margin-top: 40px;
+
+	display: flex;
+}
+
+.board-write-content-input-box {
+	flex: 1;
+}
+
+.board-write-content-textarea{
+	display: block;
+
+	width: 100%;
+
+	border: none;
+	outline: none;
+	background: none;
+	resize: none;
+
+	overflow: hidden;
+
+	color: rgba(0, 0, 0, 0.7);
+
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.board-write-content-button-box {
+	margin-left: 16px;
+
+}
+
+.image-upload-button {
+	width: 24px;
+	height: 24px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	border-radius: 6px;
+}
+
+.image-upload-button:hover {
+	background-color: rgba(0, 0, 0, 0.08);
+}
+
+.image-upload-icon{
+	width: 21px;
+	height: 21px;
+
+	background-image: url(asset/img_box.png);
+	background-position: 50% 50%;
+	background-size: 100% 100%;
+}
+
+.board-write-image-container {
+	margin-top: 20px;
+
+	position: relative;
+}
+
+.board-write-img {
+	display: block;
+
+	width: 100%;
+}
+
+.board-write-image-delete-button {
+	width: 24px;
+	height: 24px;
+
+	position: absolute;
+
+	top: 20px;
+	right: 20px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.board-write-image-delete-button:hover {
+	cursor: pointer;
+}
+
+.image-close-icon {
+	width: 21px;
+	height: 21px;
+
+	background-image: url(asset/close_square.png);
+	background-position: 50% 50%;
+	background-size: 100% 100%;
+}

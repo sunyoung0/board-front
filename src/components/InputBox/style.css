@@ -1,0 +1,94 @@
+.input-box {
+	margin-top: 40px;
+	
+}
+
+.input-box-label {
+	font-size: 14px;
+	font-weight: 400;
+	opacity: 0.7;
+}
+
+.input-box-container {
+	margin: 5px 0;
+
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+	height: 46px;
+	
+	display: flex;
+	align-items: center;
+}
+
+.input-box-container-error {
+	margin: 5px 0;
+
+	border-bottom: 1px solid rgba(255, 0, 0, 0.7) ;
+
+	height: 46px;
+	
+	background-color: #fafafa;
+
+	display: flex;
+	align-items: center;
+}
+
+.input {
+	flex: 1;
+
+	border: none;
+	outline: none;
+	background: none;
+
+	color: rgba(0, 0, 0, 0.7);
+
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.input-box-helper {
+	color: rgba(255, 0, 0, 0.7);
+
+	font-size: 10px;
+	font-weight: 400;
+}
+
+.input-box-icon {
+	margin-right: 16px;
+
+	border-radius: 24px;
+	
+	width: 24px;
+	height: 24px;
+}
+
+.input-box-icon:hover {
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.05);
+}
+
+.input-on-icon {
+	width: 24px;
+	height: 24px;
+
+	background-image: url(asset/eye_on.png);
+	background-position: 50% 50%;
+	background-size: 100% 100%;
+}
+
+.input-off-icon {
+	width: 24px;
+	height: 24px;
+
+	background-image: url(asset/eye_off.png);
+	background-position: 50% 50%;
+	background-size: 100% 100%;
+}
+
+.input-right-arrow-icon {
+	width: 24px;
+	height: 24px;
+
+	background-image: url(asset/right_arrow.png);
+	background-position: 50% 50%;
+	background-size: 100% 100%;
+}

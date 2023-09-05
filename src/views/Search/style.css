@@ -1,0 +1,111 @@
+#search-wrapper {
+	padding: 40px 8.333333vw;
+
+	background-color: rgba(0, 0, 0, 0.05);
+}
+
+.search-text-container {
+	display: flex;
+}
+
+.search-text-emphasis {
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 100%;
+}
+
+.search-text {
+	margin-right: 8px;
+
+	color: rgba(0, 0, 0, 0.7);
+
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 100%;
+}
+
+.search-container {
+	margin-top: 20px;
+	margin-bottom: 40px;
+
+	display: flex;
+}
+
+.search-board-list {
+	flex: 8;
+}
+
+.search-board-list-nothing {
+	flex: 8;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	color: rgba(0, 0, 0, 0.4);
+
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 100%;
+}
+
+.search-relation-box {
+	margin-left: 24px;
+
+	flex: 4;
+}
+
+.search-relation-card {
+	padding: 24px;
+
+	background-color: #ffffff;
+}
+
+.search-relation-text {
+	margin-bottom: 24px;
+
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 100%;
+}
+
+.search-relation-list-nothing {
+	height: 310px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	color: rgba(0, 0, 0, 0.4);
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 100%;
+}
+
+.relation-chip {
+	display: inline-flex;
+	
+  margin-right: 12px;
+  margin-bottom: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
+
+  padding: 6px 20px;
+
+  color: rgba(0,0,0,0.5);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+.relation-chip:hover {
+  cursor: pointer;
+  background-color: rgba(0,0,0,0.15);
+}
+
+.search-pagination {
+	margin-top: 60px;
+	
+	display: flex;
+	justify-content: center;
+}

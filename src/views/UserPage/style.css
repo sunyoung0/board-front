@@ -1,0 +1,171 @@
+.my-page-top {
+	padding: 40px 8.333333vw;
+}
+
+.my-page-top-container {
+	display: flex;
+	align-items: center;
+}
+
+.my-page-top-profile-box {
+	width: 120px;
+	height: 120px;
+}
+
+.my-page-top-profile {
+	border-radius: 120px;
+	
+	width: 120px;
+	height: 120px;
+	
+	background-position: 50% 50%;
+	background-size: 100% 100%;
+}
+
+.my-page-top-profile:hover {
+	cursor: pointer;
+}
+
+.my-page-top-info-box {
+	margin-left: 25px;
+}
+
+.my-page-info-nickname-container {
+	display: flex;
+	margin-bottom: 10px;
+}
+
+.my-page-info-nickname {
+	margin-right: 10px;
+
+	color: rgba(0, 0, 0, 0.7);
+	
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 100%;
+}
+
+.my-page-info-nickname-input {
+	padding: 0;
+	margin-right: 10px;
+
+	border: none;
+	background: none;
+	outline: none;
+
+	color: rgba(0, 0, 0, 0.7);
+	
+	font-family: 'Pretendard';
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 100%;
+}
+
+.my-page-info-nickname-button {
+	border-radius: 24px;
+
+	width: 24px;
+	height: 24px;
+}
+
+.my-page-info-nickname-button:hover {
+	background-color: rgba(0, 0, 0, 0.05);
+	cursor: pointer;
+}
+
+.my-page-edit-icon {
+	width: 24px;
+	height: 24px;
+
+	background-image: url(asset/write_icon.png);
+	background-position: 50% 50%;
+	background-size: 100% 100%;
+}
+
+.my-page-info-email {
+	color: rgba(0, 0, 0, 0.4);
+
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 100%;
+}
+
+.my-page-bottom {
+	padding: 40px 120px;
+
+	background-color: rgba(0, 0, 0, 0.05);
+}
+
+.my-page-bottom-text {
+	margin-bottom: 20px;
+
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 100%;
+}
+
+.my-page-bottom-text-emphasis {
+	font-weight: 700;
+}
+
+.my-page-bottom-container {
+	margin-bottom: 40px;
+	
+	display: flex;
+}
+
+.my-page-bottom-board-list {
+	flex: 8;
+}
+
+.my-page-bottom-list-nothing {
+	flex: 8;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	color: rgba(0, 0, 0, 0.4);
+
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 100%;
+}
+
+.my-page-bottom-write-box {
+	margin-left: 24px;
+
+	flex: 4;
+}
+
+.user-page-bottom-button {
+	height: 76px;
+
+	background-color: #ffffff;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.user-page-bottom-button:hover {
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.08);
+}
+
+.user-page-bottom-button-text {
+	margin: 0 6px;
+
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 100%;
+}
+
+.user-page-right-arrow-icon {
+	width: 24px;
+	height: 24px;
+
+	background-image: url(asset/arrow_right.png);
+	background-position: 50% 50%;
+	background-size: 100% 100%;
+}

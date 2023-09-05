@@ -1,0 +1,82 @@
+.pagination {
+  margin-top: 20px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.pagination-page {
+  margin: 0 10px;
+
+  color: rgba(0, 0, 0, 0.4);
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+.pagination-page:hover {
+  cursor: pointer;
+
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 700;
+}
+
+.pagination-page-active {
+  margin: 0 10px;
+
+  color: rgba(0, 0, 0, 1);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+.pagination-text {
+  margin: 0 10px;
+
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+.pagination-button {
+  margin: 0 10px;
+
+  display: flex;
+  align-items: center;
+}
+
+.pagination-button:hover {
+  cursor: pointer;
+}
+
+.pagination-button-text {
+  color: rgba(0, 0, 0, 0.7);
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+.pagination-left-icon {
+  margin: 0 4px;
+
+  width: 16px;
+  height: 16px;
+
+  background-image: url(asset/expand_left_light.png);
+  background-position: 50% 50%;
+  background-size: 100% 100%;
+}
+
+.pagination-right-icon {
+  margin: 0 4px;
+  
+  width: 16px;
+  height: 16px;
+
+  background-image: url(asset/expand_right_light.png);
+  background-position: 50% 50%;
+  background-size: 100% 100%;
+}
