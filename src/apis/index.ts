@@ -1,12 +1,20 @@
 import axios from "axios";
-import { SignInRequestDto, SignUpRequestDto} from "src/interfaces/request/auth";
+import {
+  SignInRequestDto,
+  SignUpRequestDto,
+} from "src/interfaces/request/auth";
 import {
   PatchBoardRequestDto,
   PostBoardRequestDto,
   PostCommentRequestDto,
 } from "src/interfaces/request/board";
-import { PatchNicknameRequestDto, PatchProfileImageRequestDto } from "src/interfaces/request/user";
-import { SignInResponseDto, SignUpResponseDto,
+import {
+  PatchNicknameRequestDto,
+  PatchProfileImageRequestDto,
+} from "src/interfaces/request/user";
+import {
+  SignInResponseDto,
+  SignUpResponseDto,
 } from "src/interfaces/response/auth";
 import {
   DeleteBoardResponseDto,
@@ -23,7 +31,10 @@ import {
   PutFavoriteResponseDto,
 } from "src/interfaces/response/board";
 import ResponseDto from "src/interfaces/response/response.dto";
-import { GetPopularListResponseDto, GetRelationListResponseDto } from "src/interfaces/response/search";
+import {
+  GetPopularListResponseDto,
+  GetRelationListResponseDto,
+} from "src/interfaces/response/search";
 import {
   GetLoginUserResponseDto,
   GetUserResponseDto,
@@ -31,17 +42,20 @@ import {
   PatchProfileImageResponseDto,
 } from "src/interfaces/response/user";
 
-const API_DOMAIN = "http://43.202.4.202:4040/api/v1";
+const API_DOMAIN = "http://localhost:4040/api/v1";
 const SIGN_UP_URL = () => `${API_DOMAIN}/auth/sign-up`;
 const SIGN_IN_URL = () => `${API_DOMAIN}/auth/sign-in`;
 
 const GET_TOP3_BOARD_LIST_URL = () => `${API_DOMAIN}/board/top-3`;
-const GET_CURRENT_BOARD_LIST_URL = (section: number) => `${API_DOMAIN}/board/current-board/${section}`;
+const GET_CURRENT_BOARD_LIST_URL = (section: number) =>
+  `${API_DOMAIN}/board/current-board/${section}`;
 const GET_POPULAR_LIST_URL = () => `${API_DOMAIN}/search/popular`;
 
 const GET_SEARCH_BOARD_LIST_URL = (searchWord: string, relationWord?: string) =>
-  relationWord ? `${API_DOMAIN}/board/search/${searchWord}/${relationWord}` : `${API_DOMAIN}/board/search/${searchWord}`;
-  
+  relationWord
+    ? `${API_DOMAIN}/board/search/${searchWord}/${relationWord}`
+    : `${API_DOMAIN}/board/search/${searchWord}`;
+
 const GET_RELATION_LIST_URL = (searchWord: string) =>
   `${API_DOMAIN}/search/relation/${searchWord}`;
 const GET_BOARD_URL = (boardNumber: number | string) =>
@@ -69,7 +83,7 @@ const PATCH_USER_NICKNAME_URL = () => `${API_DOMAIN}/user/nickname`;
 const PATCH_USER_PROFILE_URL = () => `${API_DOMAIN}/user/profile`;
 const GET_SIGN_IN_USER_URL = () => `${API_DOMAIN}/user`;
 
-const UPLOAD_FILE = () => `http://43.202.4.202:4040/file/upload`;
+const UPLOAD_FILE = () => `http://localhost:4040/file/upload`;
 
 export const signUpRequest = async (data: SignUpRequestDto) => {
   const result = await axios
@@ -111,7 +125,7 @@ export const getTop3BoardListRequest = async () => {
       return responseBody;
     })
     .catch((error) => {
-      const responseBody:ResponseDto = error.response.data;
+      const responseBody: ResponseDto = error.response.data;
       return responseBody;
     });
 
@@ -148,7 +162,10 @@ export const getPopularListRequest = async () => {
   return result;
 };
 
-export const getSearchBoardListRequest = async (searchWord: string, relationWord?: string) => {
+export const getSearchBoardListRequest = async (
+  searchWord: string,
+  relationWord?: string
+) => {
   const result = await axios
     .get(GET_SEARCH_BOARD_LIST_URL(searchWord, relationWord))
     .then((response) => {
@@ -228,7 +245,11 @@ export const putFavoriteRequest = async (
   token: string
 ) => {
   const result = await axios
-    .put(PUT_FAVORITE_URL(boardNumber), {}, { headers: { Authorization: `Bearer ${token}` } })
+    .put(
+      PUT_FAVORITE_URL(boardNumber),
+      {},
+      { headers: { Authorization: `Bearer ${token}` } }
+    )
     .then((response) => {
       const responseBody: PutFavoriteResponseDto = response.data;
       const { code } = responseBody;
@@ -377,9 +398,14 @@ export const getUserBoardListRequest = async (email: string) => {
   return result;
 };
 
-export const patchNicknameRequest = async (data: PatchNicknameRequestDto, token: string) => {
+export const patchNicknameRequest = async (
+  data: PatchNicknameRequestDto,
+  token: string
+) => {
   const result = await axios
-    .patch(PATCH_USER_NICKNAME_URL(), data, { headers : { Authorization: `Bearer ${token}`}})
+    .patch(PATCH_USER_NICKNAME_URL(), data, {
+      headers: { Authorization: `Bearer ${token}` },
+    })
     .then((response) => {
       const responseBody: PatchNicknameResponseDto = response.data;
       const { code } = responseBody;
@@ -394,9 +420,14 @@ export const patchNicknameRequest = async (data: PatchNicknameRequestDto, token:
   return result;
 };
 
-export const patchProfileImageRequest = async (data: PatchProfileImageRequestDto, token: string) => {
+export const patchProfileImageRequest = async (
+  data: PatchProfileImageRequestDto,
+  token: string
+) => {
   const result = await axios
-    .patch(PATCH_USER_PROFILE_URL(), data, { headers : { Authorization: `Bearer ${token}`}})
+    .patch(PATCH_USER_PROFILE_URL(), data, {
+      headers: { Authorization: `Bearer ${token}` },
+    })
     .then((response) => {
       const responseBody: PatchProfileImageResponseDto = response.data;
       const { code } = responseBody;
