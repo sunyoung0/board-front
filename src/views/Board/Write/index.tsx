@@ -1,4 +1,4 @@
-import { ChangeEvent, useRef, useState } from 'react'
+import { ChangeEvent, useEffect, useRef, useState } from 'react'
 import { useBoardWriteStore } from 'src/stores';
 import './style.css';
 
@@ -14,7 +14,7 @@ export default function BoardWrite() {
 	const fileInputRef = useRef<HTMLInputElement>(null);
 
 	// description : 게시물 정보를 저장할 상태 //
-	const { boardTitle, boardContent, boardImage, setBoardTitle, setBoardContent, setBoardImage } = useBoardWriteStore();
+	const { boardTitle, boardContent, boardImage, setBoardTitle, setBoardContent, setBoardImage, resetBoard } = useBoardWriteStore();
 
 	// description : 이미지를 저장할 상태 //
 	const [boardImageUrl, setBoardImageUrl] = useState<string>('');
@@ -59,7 +59,9 @@ export default function BoardWrite() {
 	//					component					//
 
 	//					effect					//
-
+	useEffect(() => {
+    resetBoard();
+  }, []);
 	//					render					//
 	return (
 		<div id='board-write-wrapper'>

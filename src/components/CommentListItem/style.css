@@ -1,7 +1,6 @@
 /* 마진이 씹히는 경우 display를 inline-block로 잡음 */
 .comment-list-item-box {
 	display: block;
-	margin: 15px 0;
 }
 
 .comment-list-item-writer {
